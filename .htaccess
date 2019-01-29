@@ -6,6 +6,8 @@ RewriteBase /
 # RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # SEO-friendly rewrite of localized pages:
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(en|de|es|it)/(.*)$ $2?lang=$1 [L,QSA]
 RewriteRule ^(.*)$ $1?lang=en [L,QSA]
 
