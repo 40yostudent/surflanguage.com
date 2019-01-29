@@ -1,9 +1,9 @@
 RewriteOptions inherit
 RewriteEngine On
 RewriteBase /
-RewriteCond %{HTTPS} off
-RewriteCond %{HTTP:X-Forwarded-Proto} !https
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# RewriteCond %{HTTPS} off
+# RewriteCond %{HTTP:X-Forwarded-Proto} !https
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # SEO-friendly rewrite of localized pages:
 RewriteRule ^(en|de|es|it)/(.*)$  $2?lang=$1 [L,QSA]
