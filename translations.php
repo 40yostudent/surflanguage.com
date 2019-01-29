@@ -2,7 +2,7 @@
 
     $dir = 'sqlite:translations.db';
     $db  = new PDO($dir) or die("UNABLE TO OPEN THE DATABASE");
-    $query = 'SELECT key, '.$_GET['lang'].' FROM translations';
+    $query = 'SELECT key, '.($_GET['lang'] ? $_GET['lang'] : 'en' ).' FROM translations';
 
     $strings = [];
 
