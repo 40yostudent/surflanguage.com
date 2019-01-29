@@ -1,22 +1,22 @@
-#RewriteOptions inherit
-#RewriteEngine On
-#RewriteBase /
-## RewriteCond %{HTTPS} off
-## RewriteCond %{HTTP:X-Forwarded-Proto} !https
-## RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-#
-## SEO-friendly rewrite of localized pages:
-#RewriteCond %{REQUEST_FILENAME} !-f
-#RewriteCond %{REQUEST_FILENAME} !-d
-#RewriteRule ^(en|de|es|it)/(.*)$ $2?lang=$1 [L,QSA]
-#RewriteRule ^(.*)$ $1?lang=en [L,QSA]
-#
-##Deny Files
-#<Files header.php>
-#order allow,deny
-#Deny from all
-#</Files>
-#<Files footer.php>
-#order allow,deny
-#Deny from all
-#</Files>
+RewriteOptions inherit
+RewriteEngine On
+RewriteBase /
+# RewriteCond %{HTTPS} off
+# RewriteCond %{HTTP:X-Forwarded-Proto} !https
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# SEO-friendly rewrite of localized pages:
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(en|de|es|it)/(.*)$ $2?lang=$1 [L,QSA]
+RewriteRule ^(.*)$ $1?lang=en [L,QSA]
+
+#Deny Files
+<Files header.php>
+order allow,deny
+Deny from all
+</Files>
+<Files footer.php>
+order allow,deny
+Deny from all
+</Files>
