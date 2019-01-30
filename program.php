@@ -13,7 +13,6 @@
             <p><?php echo $strings["program-box1-body2"]; ?></p>
         </div>
         <div id="programme-1-links" class="block">
-            <p>Our STUDY HOLIDAYS in Europe will take place in the following Ocean locations:</p>
             <div id="programme-destination-options">
                 <div class="destination-option">
                     <a class="button" href="../<?= $_GET['lang']; ?>/porthcawl.php">
