@@ -30,7 +30,7 @@
             <p><?php echo $strings["somo-leftcolumn-date1"]; ?></p>
             <p><?php echo $strings["somo-leftcolumn-date2"]; ?></p>
             <p><?php echo $strings["somo-leftcolumn-date3"]; ?></p> 
-            <span class="more"><a class="button" href="../<?= $_GET['lang']; ?>/schedule-spain.php"><?php echo $strings["button-programme"]; ?></a></span>
+            <span class="more"><a class="button" href="../<?= ($_GET['lang'] ? $_GET['lang'] : 'en' ) ?>/schedule-spain.php"><?php echo $strings["button-programme"]; ?></a></span>
             <!-- icon and Contattaci button -->
         </div>
 

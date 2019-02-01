@@ -195,7 +195,7 @@
         </div>
         <hr class="line  desktop-only">
                 <div class="nav-arrow" >
-                    <h6><a class="button" href="../<?= $_GET['lang']; ?>/gallery.php"><?php echo $strings["arrow-nav-prev"]; ?></a></h6>
+                    <h6><a class="button" href="../<?= ($_GET['lang'] ? $_GET['lang'] : 'en' ) ?>/gallery.php"><?php echo $strings["arrow-nav-prev"]; ?></a></h6>
                 </div>
         
 </div>

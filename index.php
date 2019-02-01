@@ -12,7 +12,7 @@
         <div id="intro" class="block">
             <h2><?php echo $strings["homepage-box1-title"]; ?></h2>
             <p><?php echo $strings["homepage-box1-body"]; ?></p>
-            <span class="more"><a class="button" href="../<?= $_GET['lang']; ?>/about-us.php"><?php echo $strings["button-aboutus"]; ?></a></span>
+            <span class="more"><a class="button" href="../<?= ($_GET['lang'] ? $_GET['lang'] : 'en' ) ?>/about-us.php"><?php echo $strings["button-aboutus"]; ?></a></span>
             
         </div>
     </div> <!-- background 1 -->
@@ -25,7 +25,7 @@
         <div class="block">
             <div id="destination-options">
                 <div class="destination-option">
-                    <a class="button" href="../<?= $_GET['lang']; ?>/porthcawl.php">
+                    <a class="button" href="../<?= ($_GET['lang'] ? $_GET['lang'] : 'en' ) ?>/porthcawl.php">
                     <picture>
                     <source srcset="./images/icon-galles.svg" media="(min-width: 768px)"/>
                     <img src="./images/icon-galles-mobile.svg" alt="Galles">
@@ -34,11 +34,11 @@
                     <div class="desktop-only"><h2>English</h2>
                     <p style="text-transform: uppercase;">Galles</p></div>
                     
-                    <div class="more desktop-only"><a class="button" href="../<?= $_GET['lang']; ?>/porthcawl.php"><?php echo $strings["button-discovermore"]; ?></a></div>
+                    <div class="more desktop-only"><a class="button" href="../<?= ($_GET['lang'] ? $_GET['lang'] : 'en' ) ?>/porthcawl.php"><?php echo $strings["button-discovermore"]; ?></a></div>
                     
                 </div>
                 <div class="destination-option">
-                    <a class="button" href="../<?= $_GET['lang']; ?>/somo.php">
+                    <a class="button" href="../<?= ($_GET['lang'] ? $_GET['lang'] : 'en' ) ?>/somo.php">
                     <picture>
                     <source srcset="./images/icon-spain.svg" media="(min-width: 768px)"/>
                     <img src="./images/icon-spain-mobile.svg" alt="Spain">
@@ -47,11 +47,11 @@
                     <div class="desktop-only"><h2>Español</h2>
                     <p style="text-transform: uppercase;">España</p></div>
                     
-                    <div class="more desktop-only"><a class="button" href="../<?= $_GET['lang']; ?>/somo.php"><?php echo $strings["button-discovermore"]; ?></a></div>
+                    <div class="more desktop-only"><a class="button" href="../<?= ($_GET['lang'] ? $_GET['lang'] : 'en' ) ?>/somo.php"><?php echo $strings["button-discovermore"]; ?></a></div>
                     
                 </div>
                 <div class="destination-option">
-                    <a class="button" href="../<?= $_GET['lang']; ?>/arcachon.php"><picture>
+                    <a class="button" href="../<?= ($_GET['lang'] ? $_GET['lang'] : 'en' ) ?>/arcachon.php"><picture>
                     <source srcset="./images/icon-france.svg" media="(min-width: 768px)"/>
                     <img src="./images/icon-france-mobile.svg" alt="France">
                         </picture></a>
@@ -60,11 +60,11 @@
                     <h2>Français</h2>
                     <p style="text-transform: uppercase;">France</p></div>
                     
-                    <div class="more desktop-only"><a class="button" href="../<?= $_GET['lang']; ?>/arcachon.php"><?php echo $strings["button-discovermore"]; ?></a></div>
+                    <div class="more desktop-only"><a class="button" href="../<?= ($_GET['lang'] ? $_GET['lang'] : 'en' ) ?>/arcachon.php"><?php echo $strings["button-discovermore"]; ?></a></div>
                     
                 </div>
                 <div class="destination-option">
-                    <a class="button" href="../<?= $_GET['lang']; ?>/honolulu.php"><picture>
+                    <a class="button" href="../<?= ($_GET['lang'] ? $_GET['lang'] : 'en' ) ?>/honolulu.php"><picture>
                     <source srcset="./images/icon-hawaii.svg" media="(min-width: 768px)"/>
                     <img src="./images/icon-hawaii-mobile.svg" alt="Hawaii">
                     </picture></a>
@@ -72,7 +72,7 @@
                     <div class="desktop-only"><h2>English</h2>
                     <p style="text-transform: uppercase;">Hawaii</p></div>
                     
-                    <div class="more desktop-only"><a class="button" href="../<?= $_GET['lang']; ?>/honolulu.php"><?php echo $strings["button-discovermore"]; ?></a></div>
+                    <div class="more desktop-only"><a class="button" href="../<?= ($_GET['lang'] ? $_GET['lang'] : 'en' ) ?>/honolulu.php"><?php echo $strings["button-discovermore"]; ?></a></div>
                     
                 </div>
             </div>
@@ -84,7 +84,7 @@
             <h2><?php echo $strings["homepage-box3-title"]; ?></h2>
             <p><?php echo $strings["homepage-box3-body"]; ?></p>
             
-            <span class="more"><a class="button" href="../<?= $_GET['lang']; ?>/team.php"><?php echo $strings["button-discovermore"]; ?></a></span>
+            <span class="more"><a class="button" href="../<?= ($_GET['lang'] ? $_GET['lang'] : 'en' ) ?>/team.php"><?php echo $strings["button-discovermore"]; ?></a></span>
             <div class="arrow"></div>
             
         </div>
@@ -95,7 +95,7 @@
             <h2><?php echo $strings["homepage-box4-title"]; ?></h2>
             <p><?php echo $strings["homepage-box4-body"]; ?></p>
             
-            <span class="more"><a class="button" href="../<?= $_GET['lang']; ?>/accomodations.php"><?php echo $strings["button-discovermore"]; ?></a></span>
+            <span class="more"><a class="button" href="../<?= ($_GET['lang'] ? $_GET['lang'] : 'en' ) ?>/accomodations.php"><?php echo $strings["button-discovermore"]; ?></a></span>
             <div class="arrow"></div>
             
         </div>
@@ -107,7 +107,7 @@
                 <h2><?php echo $strings["homepage-box5-title"]; ?></h2>
                 <p><?php echo $strings["homepage-box5-body"]; ?></p>
             
-            <span class="more"><a class="button" href="../<?= $_GET['lang']; ?>/contacts.php"><?php echo $strings["button-contactus"]; ?></a></span>
+            <span class="more"><a class="button" href="../<?= ($_GET['lang'] ? $_GET['lang'] : 'en' ) ?>/contacts.php"><?php echo $strings["button-contactus"]; ?></a></span>
         
             </div>
     </div> <!-- background 5 -->

@@ -220,7 +220,7 @@
         </div>
         <hr class="line desktop-only">
                 <div class="nav-arrow" >
-                    <h6><a class="button" href="../<?= $_GET['lang']; ?>/gallery2.php"><?php echo $strings["arrow-nav-next"]; ?></a></h6>
+                    <h6><a class="button" href="../<?= ($_GET['lang'] ? $_GET['lang'] : 'en' ) ?>/gallery2.php"><?php echo $strings["arrow-nav-next"]; ?></a></h6>
                 </div>
         
 </div>

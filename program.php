@@ -15,7 +15,7 @@
         <div id="programme-1-links" class="block">
             <div id="programme-destination-options">
                 <div class="destination-option">
-                    <a class="button" href="../<?= $_GET['lang']; ?>/porthcawl.php">
+                    <a class="button" href="../<?= ($_GET['lang'] ? $_GET['lang'] : 'en' ) ?>/porthcawl.php">
                     <picture>
                     <source srcset="./images/icon-galles.svg" media="(min-width: 768px)"/>
                     <img src="./images/icon-galles-mobile.svg" alt="Galles">
@@ -23,21 +23,21 @@
                     <div class="mobile-only"> <p style="font-size:0.83em; text-align: center; line-height:1.3em;">English<br>GALLES</p></div>
                     <div class="desktop-only"><h5>English</h5>
                     <p style="text-transform: uppercase; font-size:1em;">Galles</p></div>
-                    <div class="desktop-only"><a class="button" href="../<?= $_GET['lang']; ?>/porthcawl.php"><?php echo $strings["button-discover"]; ?></a></div>
+                    <div class="desktop-only"><a class="button" href="../<?= ($_GET['lang'] ? $_GET['lang'] : 'en' ) ?>/porthcawl.php"><?php echo $strings["button-discover"]; ?></a></div>
                 </div>
                 <div class="destination-option">
-                    <a class="button" href="../<?= $_GET['lang']; ?>/somo.php"><picture>
+                    <a class="button" href="../<?= ($_GET['lang'] ? $_GET['lang'] : 'en' ) ?>/somo.php"><picture>
                     <source srcset="./images/icon-spain.svg" media="(min-width: 768px)"/>
                     <img src="./images/icon-spain-mobile.svg" alt="Spain">
                         </picture></a>
                     <div class="mobile-only"> <p style="font-size:0.83em; text-align: center; line-height:1.3em;">Español<br>ESPAÑA</p></div>
                     <div class="desktop-only"><h5>Español</h5>
                     <p style="text-transform: uppercase; font-size:1em;">ESPAÑA</p></div>
-                    <div class="desktop-only"><a class="button" href="../<?= $_GET['lang']; ?>/somo.php"><?php echo $strings["button-discover"]; ?></a>
+                    <div class="desktop-only"><a class="button" href="../<?= ($_GET['lang'] ? $_GET['lang'] : 'en' ) ?>/somo.php"><?php echo $strings["button-discover"]; ?></a>
                     </div>
                 </div>
                 <div class="destination-option">
-                    <a class="button" href="../<?= $_GET['lang']; ?>/arcachon.php"><picture>
+                    <a class="button" href="../<?= ($_GET['lang'] ? $_GET['lang'] : 'en' ) ?>/arcachon.php"><picture>
                     <source srcset="./images/icon-france.svg" media="(min-width: 768px)"/>
                     <img src="./images/icon-france-mobile.svg" alt="France">
                     </picture></a>
@@ -45,7 +45,7 @@
                     <div class="desktop-only">
                     <h5>Français</h5>
                     <p style="text-transform: uppercase; font-size:1em;">France</p></div>
-                    <div class="desktop-only"><a class="button" href="../<?= $_GET['lang']; ?>/arcachon.php"><?php echo $strings["button-discover"]; ?></a></div>
+                    <div class="desktop-only"><a class="button" href="../<?= ($_GET['lang'] ? $_GET['lang'] : 'en' ) ?>/arcachon.php"><?php echo $strings["button-discover"]; ?></a></div>
                 </div>
                 
             </div>

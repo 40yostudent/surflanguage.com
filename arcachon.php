@@ -30,7 +30,7 @@
             <p><?php echo $strings["arcachon-leftcolumn-date1"]; ?></p>
             <p><?php echo $strings["arcachon-leftcolumn-date2"]; ?></p>
             <p><?php echo $strings["arcachon-leftcolumn-date3"]; ?></p>
-            <span class="more"><a class="button" href="../<?= $_GET['lang']; ?>/schedule-france.php"><?php echo $strings["button-programme"]; ?></a></span>
+            <span class="more"><a class="button" href="../<?= ($_GET['lang'] ? $_GET['lang'] : 'en' ) ?>/schedule-france.php"><?php echo $strings["button-programme"]; ?></a></span>
             <!-- icon and Contattaci button -->
         </div>
 

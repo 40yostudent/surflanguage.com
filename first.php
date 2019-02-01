@@ -2,7 +2,7 @@
 
 <?php include("translations.php"); ?>
 
-<html lang="<?= $_GET['lang']; ?>">
+<html lang="<?= ($_GET['lang'] ? $_GET['lang'] : 'en' ) ?>">
 
 <head>
 

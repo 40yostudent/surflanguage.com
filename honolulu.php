@@ -43,7 +43,7 @@
             <?php echo $strings["honolulu-rightcolumn-body"]; ?>
             </ul>
             <br>
-            <span class="more2"><a class="button" href="../<?= $_GET['lang']; ?>/contacts.php"><?php echo $strings["button-contactus"]; ?></a></span>
+            <span class="more2"><a class="button" href="../<?= ($_GET['lang'] ? $_GET['lang'] : 'en' ) ?>/contacts.php"><?php echo $strings["button-contactus"]; ?></a></span>
             <!-- icon and Contattaci button -->
         </div>
 

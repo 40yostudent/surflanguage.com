@@ -32,7 +32,7 @@
             <p><?php echo $strings["porthcawl-leftcolumn-date3"]; ?></p>
             <p><?php echo $strings["porthcawl-leftcolumn-date4"]; ?></p>
             <p><?php echo $strings["porthcawl-leftcolumn-date5"]; ?></p>
-            <span class="more"><a class="button" href="../<?= $_GET['lang']; ?>/schedule-galles.php"><?php echo $strings["button-programme"]; ?></a></span>
+            <span class="more"><a class="button" href="../<?= ($_GET['lang'] ? $_GET['lang'] : 'en' ) ?>/schedule-galles.php"><?php echo $strings["button-programme"]; ?></a></span>
             <!-- icon and Contattaci button -->
         </div>
 
