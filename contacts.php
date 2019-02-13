@@ -7,26 +7,34 @@
         isset($_POST['country']) && !empty($_POST['country']) &&
         isset($_POST['email']) && !empty($_POST['email']) &&
         isset($_POST['message']) && !empty($_POST['message']) ) {
+
         $to = 'support@qmill.eu, giugeo85@mac.com, giugeo85@gmail.com, giugeo85@yahoo.it';
         $from = $_POST['email'];
         $name = $_POST['name'];
-        $message = $_POST['message']; // AGGIUNGERE I VARI CAMPI AL CORPO DEL MESSAGGIO
 
-        $headers = "From:" . $from;
-        mail($to, "Mail from" . " " . $name, $message, $headers);
-        $form_button_label = "Mail Sent!";
+        $message = 'Nome: '.$_POST['name'].'\n';
+        $message .= 'Viaggio: '.$_POST['travel'].'\n';
+        $message .= 'Genere: '.$_POST['gender'].'\n';
+        $message .= 'Data di nascita: '.$_POST['birth-date'].'\n';
+        $message .= 'Città: '.$_POST['city'].'\n';
+        $message .= 'Paese: '.$_POST['country'].'\n';
+        $message .= 'Messaggio:\n'.$_POST['message'];
+
+        $headers = 'From:' . $from;
+        mail($to, 'Mail from' . ' ' . $name, $message, $headers);
+        $form_button_label = 'Mail Sent!';
     } else {
-        $form_button_label = "Submit";
+        $form_button_label = 'Submit';
     }
 ?>
 
-<?php include("first.php"); ?>
+<?php include('first.php'); ?>
 
 <main>
 
     <div id="contact-us">
 
-        <?php include("header.php"); ?>
+        <?php include('header.php'); ?>
         
         <div id="contact-text" class="block">
            
@@ -71,4 +79,4 @@
 
 </main>
 
-<?php include("footer.php"); ?>
+<?php include('footer.php'); ?>
