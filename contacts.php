@@ -8,7 +8,7 @@
         isset($_POST['email']) && !empty($_POST['email']) &&
         isset($_POST['message']) && !empty($_POST['message']) ) {
 
-        $to = 'support@qmill.eu, giugeo85@mac.com, giugeo85@gmail.com, giugeo85@yahoo.it';
+        $to = 'support@qmill.eu, info@surflanguage.com';
         $from = $_POST['email'];
         $name = $_POST['name'];
 
@@ -18,7 +18,8 @@
         $message .= 'Data di nascita: '.$_POST['birth-date'].PHP_EOL;
         $message .= 'Città: '.$_POST['city'].PHP_EOL;
         $message .= 'Paese: '.$_POST['country'].PHP_EOL;
-        $message .= 'Messaggio:\n'.$_POST['message'];
+        $message .= PHP_EOL;
+        $message .= 'Messaggio:'.PHP_EOL.$_POST['message'];
 
         $headers = 'From:' . $from;
         mail($to, 'Mail from' . ' ' . $name, $message, $headers);
