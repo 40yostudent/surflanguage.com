@@ -12,12 +12,12 @@
         $from = $_POST['email'];
         $name = $_POST['name'];
 
-        $message = 'Nome: '.$_POST['name'].'\n';
-        $message .= 'Viaggio: '.$_POST['travel'].'\n';
-        $message .= 'Genere: '.$_POST['gender'].'\n';
-        $message .= 'Data di nascita: '.$_POST['birth-date'].'\n';
-        $message .= 'Città: '.$_POST['city'].'\n';
-        $message .= 'Paese: '.$_POST['country'].'\n';
+        $message = 'Nome: '.$_POST['name'].PHP_EOL;
+        $message .= 'Viaggio: '.$_POST['travel'].PHP_EOL;
+        $message .= 'Genere: '.$_POST['gender'].PHP_EOL;
+        $message .= 'Data di nascita: '.$_POST['birth-date'].PHP_EOL;
+        $message .= 'Città: '.$_POST['city'].PHP_EOL;
+        $message .= 'Paese: '.$_POST['country'].PHP_EOL;
         $message .= 'Messaggio:\n'.$_POST['message'];
 
         $headers = 'From:' . $from;
