@@ -41,8 +41,8 @@
            
                 <h2>Contact Us</h2>
                 <p>If you are interested in receiving more information or booking a vacation, please fill the form.</p>
-                <p style="color: red;">UNDER MAINTENANCE - for any further query please write to <a class="maintenance" href="mailto:info@surflanguage.com">info@surflanguage.com</a> rather then filling the form.<br>
-                We apologise for the inconvenience.</p>
+                <!-- <p style="color: red;">UNDER MAINTENANCE - for any further query please write to <a class="maintenance" href="mailto:info@surflanguage.com">info@surflanguage.com</a> rather then filling the form.<br>
+                We apologise for the inconvenience.</p> -->
                 <h6>Please, select the vacation type and fill the form. </h6>
             
             <div id="contact-form" class="block">
