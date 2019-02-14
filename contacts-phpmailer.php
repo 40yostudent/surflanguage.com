@@ -37,7 +37,7 @@
                 $mail->setFrom('mailer@surflanguage.com', 'Form di contatto');
                 $mail->addAddress('support@qmill.eu');
                 $mail->addReplyTo($_POST['email'], $_POST['name']);
-                $mail->addBCC('support@qmill.eu');
+                $mail->addBCC('sabino@qmill.eu');
 
                 // Attachments
                 // $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
