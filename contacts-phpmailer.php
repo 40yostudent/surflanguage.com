@@ -28,9 +28,9 @@
                 $mail->SMTPAuth = true;                               // Enable SMTP authentication
                 $mail->Username = 'phpmailer@surflanguage.com';       // SMTP username
                 $mail->Password = 'nikzyT-cegfeb-2wejde';             // SMTP password
-                // $mail->SMTPAutoTLS = false;
-                $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-                $mail->Port = 587;                                    // TCP port to connect to
+                $mail->SMTPAutoTLS = false;                           // Required to work, for now
+                $mail->SMTPSecure = 'false';                          // Enable TLS encryption, `ssl` also accepted
+                $mail->Port = 25;                                     // TCP port to connect to
 
                 // Recipients
                 // $mail->setFrom($_POST['email'], $_POST['name']);
@@ -48,7 +48,7 @@
                 // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 
                 //Content
-                $mail->isHTML(true);                                  // Set email format to HTML
+                $mail->isHTML(false);                                    // Set email format to HTML
                 $mail->Subject = 'Here is the subject';
                 $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
                 $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
