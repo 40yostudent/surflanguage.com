@@ -1,4 +1,5 @@
 "use strict";
+// @ts-check
 
 // TOGGLE MENU
 let menu = document.getElementById("menu-mobile");
