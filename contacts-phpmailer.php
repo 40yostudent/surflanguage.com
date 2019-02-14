@@ -68,11 +68,6 @@
                 echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
             }
 
-        // $to = 'support@qmill.eu, giugeo85@mac.com, giugeo85@gmail.com, giugeo85@yahoo.it';
-        // $from = $_POST['email'];
-        // $name = $_POST['name'];
-        // $message = $_POST['message']; // AGGIUNGERE I VARI CAMPI AL CORPO DEL MESSAGGIO
-
         $form_button_label = "Mail Sent!";
     } else {
         $form_button_label = "Submit";
@@ -91,11 +86,10 @@
            
                 <h2>Contact Us</h2>
                 <p>If you are interested in receiving more information or booking a vacation, please fill the form.</p>
-                <p style="color: red;">UNDER MAINTENANCE - for any further query please write to <a class="maintenance" href="mailto:info@surflanguage.com">info@surflanguage.com</a></p>
             
             <div id="contact-form" class="block">
 
-                <form action="../contacts-phpmailer.php#contact-form" method="post" id="contact-form-form"> <!-- LINKARE ALTEZZA GIUSTA DELLA PAGINA -->
+                <form action="../contacts-phpmailer.php#contact-form" method="post" id="contact-form-form">
                     <select name="travel" placeholder="Request of information for (Select)">
                         <option>Galles 1</option>
                         <option>Galles 2</option>
