@@ -50,9 +50,9 @@
                 $mail->Body    .= 'Viaggio: <b>'.$_POST['travel'].'</b><br>';
                 $mail->Body    .= 'Genere: <b>'.$_POST['gender'].'</b><br>';
                 $mail->Body    .= 'Data di nascita: <b>'.$_POST['birth-date'].'</b><br>';
-                $mail->Body    .= 'Città: <b>'.$_POST['city'].'</b><br>';
+                $mail->Body    .= 'Citt&agrave;: <b>'.$_POST['city'].'</b><br>';
                 $mail->Body    .= 'Paese: <b>'.$_POST['country'].'</b><br><br>';
-                $mail->Body    .= 'Messaggio: '.$_POST['message'];
+                $mail->Body    .= 'Messaggio: <br>'.$_POST['message'];
                 $mail->AltBody  = 'Nome: '.$_POST['name'].PHP_EOL;
                 $mail->AltBody .= 'Viaggio: '.$_POST['travel'].PHP_EOL;
                 $mail->AltBody .= 'Genere: '.$_POST['gender'].PHP_EOL;
