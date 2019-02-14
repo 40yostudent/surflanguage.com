@@ -26,7 +26,7 @@
                 $mail->isSMTP();                                      // Set mailer to use SMTP
                 $mail->Host = 'localhost';                            // Specify main and backup SMTP servers
                 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-                $mail->Username = 'mailer@surflanguage.com';          // SMTP username
+                $mail->Username = 'phpmailer@surflanguage.com';       // SMTP username
                 $mail->Password = 'nikzyT-cegfeb-2wejde';             // SMTP password
                 $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
                 $mail->Port = 587;                                    // TCP port to connect to
