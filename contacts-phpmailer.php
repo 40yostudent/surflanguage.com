@@ -34,24 +34,33 @@
 
                 // Recipients
                 // $mail->setFrom($_POST['email'], $_POST['name']);
-                $mail->setFrom('mailer@surflanguage.com');
+                $mail->setFrom('mailer@surflanguage.com', 'Form di contatto');
                 $mail->addAddress('support@qmill.eu');
-                $mail->addAddress('giugeo85@mac.com');
-                $mail->addAddress('giugeo85@gmail.com');
-                $mail->addAddress('giugeo85@yahoo.it');
-                $mail->addReplyTo('support@qmill.eu', 'QMill Support');
-                $mail->addCC('giugeo85@gmail.com');
-                $mail->addBCC('giugeo85@yahoo.it');
+                $mail->addReplyTo($_POST['email'], $_POST['name']);
+                $mail->addBCC('support@qmill.eu');
 
                 // Attachments
                 // $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
                 // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 
                 //Content
-                $mail->isHTML(false);                                    // Set email format to HTML
-                $mail->Subject = 'Here is the subject';
-                $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-                $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+                $mail->isHTML(true);                                     // Set email format to HTML
+                $mail->Subject  = 'Form inviato da '.$_POST['name'];
+                $mail->Body     = 'Nome: <b>'.$_POST['name'].'</b><br>';
+                $mail->Body    .= 'Viaggio: <b>'.$_POST['travel'].'</b><br>';
+                $mail->Body    .= 'Genere: <b>'.$_POST['gender'].'</b><br>';
+                $mail->Body    .= 'Data di nascita: <b>'.$_POST['birth-date'].'</b><br>';
+                $mail->Body    .= 'Città: <b>'.$_POST['city'].'</b><br>';
+                $mail->Body    .= 'Paese: <b>'.$_POST['country'].'</b><br><br>';
+                $mail->Body    .= 'Messaggio: '.$_POST['message'];
+                $mail->AltBody  = 'Nome: '.$_POST['name'].PHP_EOL;
+                $mail->AltBody .= 'Viaggio: '.$_POST['travel'].PHP_EOL;
+                $mail->AltBody .= 'Genere: '.$_POST['gender'].PHP_EOL;
+                $mail->AltBody .= 'Data di nascita: '.$_POST['birth-date'].PHP_EOL;
+                $mail->AltBody .= 'Città: '.$_POST['city'].PHP_EOL;
+                $mail->AltBody .= 'Paese: '.$_POST['country'].PHP_EOL;
+                $mail->AltBody .= PHP_EOL;
+                $mail->AltBody .= 'Messaggio:'.PHP_EOL.$_POST['message'];
 
                 $mail->send();
                 echo 'Message has been sent';
