@@ -1,12 +1,11 @@
 <?php 
 
-    // Import PHPMailer classes into the global namespace
-    // These must be at the top of your script, not inside a function
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
-
-    //Load Composer's autoloader
-    require '../vendor/autoload.php';
+    
+    require 'path/to/PHPMailer/src/Exception.php';
+    require 'path/to/PHPMailer/src/PHPMailer.php';
+    require 'path/to/PHPMailer/src/SMTP.php';
 
     if( isset($_POST['travel']) && !empty($_POST['travel']) &&
         isset($_POST['name']) && !empty($_POST['name']) &&
