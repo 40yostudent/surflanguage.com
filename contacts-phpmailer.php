@@ -28,8 +28,10 @@
                 $mail->SMTPAuth = true;                               // Enable SMTP authentication
                 $mail->Username = 'phpmailer@surflanguage.com';       // SMTP username
                 $mail->Password = 'nikzyT-cegfeb-2wejde';             // SMTP password
-                $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-                $mail->Port = 587;                                    // TCP port to connect to
+                // $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+                $mail->SMTPAutoTLS = false;
+                $mail->SMTPSecure = false;
+                $mail->Port = 25;                                     // TCP port to connect to
 
                 // Recipients
                 // $mail->setFrom($_POST['email'], $_POST['name']);
