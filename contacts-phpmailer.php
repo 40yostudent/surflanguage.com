@@ -22,7 +22,7 @@
             $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
             try {
                 //Server settings
-                $mail->SMTPDebug = 2;                                 // Enable verbose debug output
+                $mail->SMTPDebug = 0;                                 // Enable verbose debug output
                 $mail->isSMTP();                                      // Set mailer to use SMTP
                 $mail->Host = 'localhost';                            // Specify main and backup SMTP servers
                 $mail->SMTPAuth = true;                               // Enable SMTP authentication
@@ -36,8 +36,9 @@
                 // $mail->setFrom($_POST['email'], $_POST['name']);
                 $mail->setFrom('mailer@surflanguage.com', 'Form di contatto');
                 $mail->addAddress('support@qmill.eu');
+                $mail->addAddress('info@surflanguage.com');
                 $mail->addReplyTo($_POST['email'], $_POST['name']);
-                $mail->addBCC('sabino@qmill.eu');
+                // $mail->addBCC('support@qmill.eu');
 
                 // Attachments
                 // $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
