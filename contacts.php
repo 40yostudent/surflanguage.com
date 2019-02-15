@@ -90,7 +90,7 @@
             
             <div id="contact-form" class="block">
 
-                <form action="../contacts-phpmailer.php#contact-form" method="post" id="contact-form-form">
+                <form action="../contacts.php#contact-form" method="post" id="contact-form-form">
                     <select name="travel" placeholder="Request of information for (Select)">
                         <option>Galles 1</option>
                         <option>Galles 2</option>
