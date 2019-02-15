@@ -28,24 +28,17 @@
                 $mail->SMTPAuth = true;                               // Enable SMTP authentication
                 $mail->Username = 'phpmailer@surflanguage.com';       // SMTP username
                 $mail->Password = 'nikzyT-cegfeb-2wejde';             // SMTP password
-                // $mail->SMTPAutoTLS = false;                        // Required to work, for now
                 $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
                 $mail->Port = 587;                                    // TCP port to connect to
 
                 // Recipients
-                // $mail->setFrom($_POST['email'], $_POST['name']);
-                $mail->setFrom('mailer@surflanguage.com', 'Form di contatto');
+                $mail->setFrom('support@qmill.eu', 'Form di contatto');
                 $mail->addAddress('support@qmill.eu');
                 $mail->addAddress('info@surflanguage.com');
                 $mail->addReplyTo($_POST['email'], $_POST['name']);
-                // $mail->addBCC('support@qmill.eu');
-
-                // Attachments
-                // $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-                // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 
                 //Content
-                $mail->isHTML(true);                                     // Set email format to HTML
+                $mail->isHTML(true);
                 $mail->Subject  = 'Form inviato da '.$_POST['name'];
                 $mail->Body     = 'Nome: <b>'.$_POST['name'].'</b><br>';
                 $mail->Body    .= 'Viaggio: <b>'.$_POST['travel'].'</b><br>';
