@@ -24,13 +24,13 @@
                 //Server settings
                 $mail->SMTPDebug = 0;                                 // Enable verbose debug output
                 $mail->isSMTP();                                      // Set mailer to use SMTP
-                $mail->Host = 'localhost';                            // Specify main and backup SMTP servers
+                $mail->Host = 'server.qmill.eu';                      // Specify main and backup SMTP servers
                 $mail->SMTPAuth = true;                               // Enable SMTP authentication
                 $mail->Username = 'phpmailer@surflanguage.com';       // SMTP username
                 $mail->Password = 'nikzyT-cegfeb-2wejde';             // SMTP password
-                $mail->SMTPAutoTLS = false;                           // Required to work, for now
-                $mail->SMTPSecure = 'false';                          // Enable TLS encryption, `ssl` also accepted
-                $mail->Port = 25;                                     // TCP port to connect to
+                // $mail->SMTPAutoTLS = false;                        // Required to work, for now
+                $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+                $mail->Port = 587;                                    // TCP port to connect to
 
                 // Recipients
                 // $mail->setFrom($_POST['email'], $_POST['name']);
