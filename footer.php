@@ -49,7 +49,7 @@
             </div>
 
             <ul>
-                <li><a href="#">Privacy</a></li>
+                <li><a href="./privacy.php">Privacy</a></li>
                 <li><a href="#">Cookies</a></li>
                 <li><a href="#">Terms of Use</a></li>
                 <li><a href="#">Policy</a></li>
